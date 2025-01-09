@@ -12,8 +12,8 @@ public class Card extends JLabel {
         super();
         this.suit = suit;
     	this.num = num;
-    	img = new ImageIcon("../png/"+suit+num+".png");
-	    back = new ImageIcon("../png/z02.png");
+    	img = new ImageIcon("./png/"+suit+num+".png");
+	    back = new ImageIcon("./png/z02.png");
 	    setSize(img.getIconWidth( ), img.getIconHeight( ));
         setFace(false);
         if (num==1) this.num=14;

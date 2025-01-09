@@ -49,7 +49,8 @@ public class CardHolder extends ArrayList<Card> {
     	Collections.sort(this, new CardComparator());
     }
 
-    class CardComparator implements Comparator {
+    class CardComparator implements Comparator<Object> {
+	@Override
         public int compare(Object s, Object t) {
             return ((Card)s).getNum() - ((Card)t).getNum();
         }
